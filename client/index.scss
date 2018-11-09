@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+@import '~spectre.css/src/spectre';
+@import '~spectre.css/src/spectre-exp.scss';
+@import '~spectre.css/src/spectre-icons.scss';
+
+:root,
+body {
+    height: 100%;
+}
+
+.root {
+    background: $gray-color-light;
+    padding-bottom: 2rem;
+}

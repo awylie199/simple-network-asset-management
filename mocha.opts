@@ -1,0 +1,6 @@
+--require @babel/register
+--require mocha.js
+--ui bdd
+--colors
+--require ignore-styles
+
