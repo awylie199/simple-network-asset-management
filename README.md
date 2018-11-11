@@ -4,6 +4,8 @@ The simple asset management app allows users to view and create assets.
 
 Assets are expected to have a name, description, latitude and longitude.
 
+**To run the app you must create a '.env' file from '.env.example'.**
+
 ## Technology
 
 ### Frontend
@@ -12,7 +14,8 @@ The app is built on the frontend with [React](https://reactjs.org/) and [Redux](
 
 Although React (and particularly Redux) are unnecessary for such a simple app,
 it should allow the app to grow. It also aligns with the other technology used
-in the company, and interns should be familiar with it.
+in the company, and interns should be familiar with it. Alternatively, the new
+React context API could be used.
 
 Styling is done with [Styled Components](https://www.styled-components.com/) and with support for SCSS files.
 
@@ -42,10 +45,13 @@ yarn start:server # To start the node server only
 
 ### Testing and Linting
 
-Testing is BDD, done with the Mocha test runner, Chai assertions, Sinon mocking,
+Unit testing is BDD, done with the Mocha test runner, Chai assertions, Sinon mocking,
 Enzyme and Instanbul test coverage reports.
 
-Code quality is linted by Eslint and Stylelint
+Test files are placed in the same folder as the file to be tested, and the file
+must end with the extension '*.spec.js'.
+
+Code quality is linted by Eslint and Stylelint.
 
 ```shell
 yarn test # For a one time test run and test report
@@ -92,6 +98,7 @@ Numerous improvements are available, even for such a small app, such as:
 - Authorization on the API (e.g. NONCEs or a Cookie, served on the initial page render)
 - Map display for assets (based on location)
 - HTTPS
+- Extract styles into stylesheet using [mini css webpack plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
 - Better logging on client and server side
 - Hot Module Reloading (for improved development speed)
 - Server Side Rendering (for quicker first bite)
