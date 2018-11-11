@@ -46,7 +46,7 @@ export class AssetCard extends PureComponent {
                     <div className='tile-title asset-card__description'>
                         Description: {sanitizeHtml(description)}
                     </div>
-                    <small className='chip asset-card__location'>
+                    <small className='asset-card__location'>
                         Location: {sanitizeHtml(latitude)}, {sanitizeHtml(longitude)}
                     </small>
                 </div>
