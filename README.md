@@ -6,6 +6,13 @@ Assets are expected to have a name, description, latitude and longitude.
 
 **To run the app you must create a '.env' file from '.env.example'.**
 
+Stylelint peer dependency [issue](https://github.com/webpack-contrib/stylelint-webpack-plugin/issues/149) is pending [merge and release](https://github.com/webpack-contrib/stylelint-webpack-plugin/pull/164):
+
+```shell
+yarn check
+# error "stylelint-webpack-plugin#stylelint@^8.0.0" doesn't satisfy found match of "stylelint@9.7.1"
+```
+
 ## Technology
 
 ### Frontend
